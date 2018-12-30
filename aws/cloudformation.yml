@@ -1,11 +1,16 @@
 AWSTemplateFormatVersion : '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 
-Resources:
+Parameters:
+  AppName:
+    Type: String
+
+Resources:  
   HelloWorldFunction:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: ../src
+      FunctionName: !Sub ${AppName}-lambda-hello-world
       Handler: index.handler
       Runtime: nodejs8.10
       Events:
