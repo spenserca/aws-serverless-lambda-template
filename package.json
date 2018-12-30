@@ -1,0 +1,19 @@
+{
+  "name": "aws-serverless-lambda-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:spenserca/aws-serverless-lambda-template.git",
+  "author": "Spenser Andreassen <spenserca@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "lint": "eslint --color -c ./config/.eslintrc.js '**/*.js'",
+    "test": "jest --config ./config/jest.config.js",
+    "verify": "yarn lint && yarn test"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-get-off-my-lawn": "^4.0.1",
+    "jest": "^23.6.0"
+  }
+}
