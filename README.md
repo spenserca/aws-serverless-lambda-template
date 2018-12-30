@@ -1,15 +1,9 @@
 # AWS Serverless Lambda Template
 
-## Deploy
-
+## Package & Deploy Function
 ```bash
-make create-stack
-```
-
-## Update
-
-```bash
-make update-stack
+make package
+make deploy
 ```
 
 ## Decommission
